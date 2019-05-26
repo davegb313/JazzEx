@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <title></title>
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="/">SocialNet</a>
+</nav>
+
+
+  <div class="container">
+    
+    <div class="row">
+
+    	<div class="col-8">
+    {% for style in styles %}
+        
+ 
+          <div class="card mt-3">
+            <div class="card-body">
+              <p class="card-text">{{ style.text }}</p>
+            </div>
+          </div>
+        {% endfor %}    
+        </div>
+
+  
+    </div>
+
+  </div>
+
+</body>
+</html>
